@@ -14,4 +14,9 @@ public class Service
         List<Student> Students = studentRepository.findAll();
         return Students;
     }
+
+    public Student addstudent(Student student)
+    {
+        return studentRepository.save(student);
+    }
 }
